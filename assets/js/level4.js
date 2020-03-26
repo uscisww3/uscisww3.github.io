@@ -25,10 +25,13 @@ DragNSort.prototype.onDragStart = function (_this, event) {
     this.classList.add(_this.dragStartClass);
     event.dataTransfer.effectAllowed = 'move';
     event.dataTransfer.setData('text/html', this.innerHTML);
+
 };
 
 DragNSort.prototype.onDragEnd = function (_this) {
     this.classList.remove(_this.dragStartClass);
+    event.stopPropagation();
+    event.preventDefault();
 };
 
 DragNSort.prototype.onDragEnter = function (_this) {
@@ -43,7 +46,8 @@ DragNSort.prototype.onDragOver = function (_this, event) {
     if (event.preventDefault) {
         event.preventDefault();
     }
-
+    event.stopPropagation();
+    event.preventDefault();
     event.dataTransfer.dropEffect = 'move';
 
     return false;
@@ -53,7 +57,8 @@ DragNSort.prototype.onDrop = function (_this, event) {
     if (event.stopPropagation) {
         event.stopPropagation();
     }
-
+    event.stopPropagation();
+    event.preventDefault();
     if (_this.$activeItem !== this) {
         _this.$activeItem.innerHTML = this.innerHTML;
         this.innerHTML = event.dataTransfer.getData('text/html');
@@ -85,4 +90,5 @@ var draggable = new DragNSort({
     dragEnterClass: 'drag-enter'
 });
 draggable.init();
+
 });
