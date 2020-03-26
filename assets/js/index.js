@@ -1,9 +1,11 @@
 
 $(document).ready(function () {
+
 var page = 1;
 document.getElementById("next").onclick = function () { myFunction() };
 
 function myFunction(john) {
+    openFullscreen();
     if(page == 1){
     document.getElementById("next").innerHTML = "Continue";
     document.getElementById("next").style.fontSize = "15px";
@@ -81,6 +83,17 @@ function myFunction(john) {
         document.getElementById("rolex").style.display = "none";
     }
 
-
+    var elem = document.documentElement;
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
 });
 
