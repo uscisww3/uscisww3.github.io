@@ -1,0 +1,77 @@
+[draggable] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.drag-list {
+    float: right;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 640px;
+    border: 1px solid #ccc;
+}
+.drag-item {
+    float: left;
+    width: 25%;
+    height: 160px;
+    color: #555;
+    background: #ddd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    -ms-transition: 0.25s;
+    transition: 0.25s;
+}
+.drag-start {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+.drag-enter {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+div.drag-item > img {
+
+    width: auto;
+    height: auto;
+}
+
+div.drag-item {
+    border: 2px solid black;
+}
+
+.drag-list:hover{
+    cursor: grab;
+}
+
+.drag-list{
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.l4in {
+    float: left;
+    margin-left: 50px;
+    width: 45%;
+}
+
+.l4in > h4{
+line-height: 25px;
+
+}
+
+#level4{
+    display: none;
+}

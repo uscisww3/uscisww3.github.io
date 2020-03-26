@@ -1,0 +1,50 @@
+#level3{
+    align-content: center;
+}
+
+.lv3num{
+    width: 40px;
+    border: none;
+    border-bottom: 2px solid ivory;
+}
+
+.lv3num:focus{
+    outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.questions > ol > li{
+    padding-bottom: 15px;
+}
+
+.questions{
+    float: left;
+}
+
+.numbank {
+    float: left;
+    padding-left: 20px;
+}
+
+.instructions {
+    float: left;
+    padding-left: 50px;
+}
+
+.equations{
+    font-size: 30px;
+}
+
+.instu {
+    font-size: 15px;
+}

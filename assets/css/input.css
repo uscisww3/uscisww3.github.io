@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+
+
+#digit-1{
+width: 280px;
+height: 50px;
+background-color: #18182a;
+border: none;
+line-height: 50px;
+text-align: left;
+font-size: 24px;
+font-family: 'Raleway', sans-serif;
+font-weight: 200;
+color: white;
+margin: 0 2px;
+text-transform: uppercase;
+
+display: none;
+}
+
+.prompt {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#l1{
+    display: none;
+}
+#l2{
+    display: none;
+}
+#digit-1 {
+    border: none;
+    width: 13.5ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100% / 100% 2px no-repeat;
+    color: dimgrey;
+    font: 5ch consolas, monospace;
+    font-family: 'ShareTech';
+    letter-spacing: 0.5ch;
+}
+#digit-1:focus {
+    outline: none;
+    color: dodgerblue;
+}

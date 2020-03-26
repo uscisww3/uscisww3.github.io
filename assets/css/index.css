@@ -1,0 +1,129 @@
+* {
+    background-color: black;
+    color:white;
+}
+
+@font-face {
+  font-family: 'Candal';
+  src: url('../fonts/Candal-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Calligraffitti';
+    src: url('../fonts/Calligraffitti-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url('../fonts/MontserratAlternates-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ShareTech';
+    src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
+}
+
+
+.breakout {
+    font-size: 30px;
+    border-width: 8px;
+    border-radius: 71px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-color: white;
+    font-family: 'Candal';
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:active {
+    border-color: black;
+    background-color: white;
+    color: black;
+}
+
+.title h1 {
+    font-family: 'Montserrat';
+    font-size: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.title h2 {
+    font-family: 'MontserratAlternates';
+    font-size: 35px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+
+}
+.title {
+    text-align: center;
+    
+}
+.info {
+    font-family: 'Calligraffitti';
+    font-size: 35px;
+    width: 500px;
+    margin:0 auto;
+    padding-bottom: 50px;
+}
+
+.body {
+    text-align: center;
+    padding-top: 75px;
+    background-color: black;
+}
+.button {
+    text-align: center;
+}
+
+#level1 {
+    display: none;
+}
+
+.level1 {
+    display: none;
+    position: absolute;
+    padding-top: 50px;
+    font-family: 'Montserrat';
+    padding-right: 30px;
+}
+
+#level2 {
+display: none;
+background-color: black;
+
+}
+
+#tt2 {
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+*{
+    font-family: 'Montserrat';
+}
+
+#level3 {
+    display: none;
+    background-color: black;
+
+}

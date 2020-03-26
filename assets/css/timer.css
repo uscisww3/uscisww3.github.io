@@ -1,0 +1,103 @@
+.timercont {
+    --yellow: #EDE20F;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #121011;
+    color: var(--yellow);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 330px;
+    text-align: center;
+}
+
+.timercont{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 30;
+}
+
+.pixelated {
+    background: url('../img/FlMW59B.png') repeat scroll left top;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.container {
+    border: 1px solid #323232;
+    border-radius: 8px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.timer {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 50px;
+    color: #EDE20F;
+    text-shadow: 0 0 5px #CFD117;
+}
+.timer > div {
+    display: inline-block;
+    color: #EDE20F;
+}
+
+.divider {
+    font-size: 45px;
+    -webkit-transform: translateY(-0.3rem);
+    transform: translateY(-0.3rem);
+    padding: 0.75rem;
+    color: #EDE20F;
+    -webkit-animation: blink-divider 1s ease alternate infinite;
+    animation: blink-divider 1s ease alternate infinite;
+}
+
+
+@-webkit-keyframes blink-bar {
+    80% {
+        opacity: 0.25;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.25;
+    }
+}
+
+@keyframes blink-bar {
+    80% {
+        opacity: 0.25;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.25;
+    }
+}
+@-webkit-keyframes blink-divider {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes blink-divider {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
