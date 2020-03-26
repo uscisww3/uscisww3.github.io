@@ -38,7 +38,7 @@ div#drag td{
 .drag{
 	margin: auto;
 	text-align: center;
-	width: 175px;
+	width: 125px;
 	border: 2px solid SteelBlue;
 
 }
@@ -60,7 +60,7 @@ div#drag td{
 #fixed_container{
 	position: fixed;
 top: 100px;
-	width: 200px;
+	width: 150px;
 	right:10px;
 	max-height: 400px;
 	/* make it visible */
