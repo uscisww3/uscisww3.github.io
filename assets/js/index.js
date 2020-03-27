@@ -37,7 +37,7 @@ function myFunction(john) {
             document.getElementById("digit-1").style.backgroundColor = "red";
         }
     }else if(page == 3){
-        if (document.getElementById("digit-1").value.toUpperCase() == "193124212817273019223028"){
+        if (document.getElementById("digit-1").value.toUpperCase() == "193129212817273019223028"){
             document.getElementById("digit-1").style.backgroundColor = "black";
             document.getElementById("tt1").innerHTML = "Level 3";
             document.getElementById("digit-1").value = "";
